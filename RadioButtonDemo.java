@@ -31,7 +31,7 @@ public class RadioButtonDemo extends JFrame {
     JPanel radioPanel = new JPanel();
     panel.add(radioPanel);
 
-    // Use BoxLayout with vertical orientation for radioPanel
+    // BoxLayout with vertical orientation 
     radioPanel.setLayout(new BoxLayout(radioPanel, BoxLayout.Y_AXIS));
 
     birdButton = new JRadioButton("Bird");
@@ -53,7 +53,6 @@ public class RadioButtonDemo extends JFrame {
     radioPanel.add(rabbitButton);
     radioPanel.add(pigButton);
 
-    // Add empty space at the end to prevent the panel from stretching
     radioPanel.add(Box.createVerticalGlue());
 
     birdButton.addActionListener(new PetButtonListener());
@@ -65,9 +64,9 @@ public class RadioButtonDemo extends JFrame {
     petImageLabel = new JLabel();
     panel.add(petImageLabel);
 
-    // Set default selection
+    //default selection
     pigButton.setSelected(true);
-    displayImage("pig.jpg.jpeg"); // Default image
+    displayImage("pig.img.jpeg"); // Default image
 }
 
     private void displayImage(String imageName) {
@@ -87,15 +86,15 @@ public class RadioButtonDemo extends JFrame {
             String imageName = "images/";
 
             if (source == birdButton) {
-                imageName = "bird.jpg.jpeg";
+                imageName = "bird.img.jpeg";
             } else if (source == catButton) {
-                imageName = "cat.jpg.jpeg";
+                imageName = "cat.img.jpeg";
             } else if (source == dogButton) {
-                imageName = "dog.jpg.jpeg";
+                imageName = "dog.img.jpeg";
             } else if (source == rabbitButton) {
-                imageName = "rabbit.jpg.jpeg";
+                imageName = "rabbit.img.jpeg";
             } else if (source == pigButton) {
-                imageName = "pig.jpg.jpeg";
+                imageName = "pig.img.jpeg";
             }
 
             displayImage(imageName);
