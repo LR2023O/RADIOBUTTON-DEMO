@@ -17,7 +17,7 @@ public class RadioButtonDemo extends JFrame {
 
         setTitle("RadioButtonDemo");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(400, 300);
+        setSize(600, 500);
         setLocationRelativeTo(null);
         setResizable(true);
     }
